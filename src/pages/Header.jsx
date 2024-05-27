@@ -1,10 +1,15 @@
 import { Stack, useColorMode, useMediaQuery, Flex, Circle, Box, Text, Button, Image } from '@chakra-ui/react'
 import MyImage from './ikke.jpg';
+
 export default function Header() {
     const { colorMode } = useColorMode();
     const isDark = colorMode === 'dark';
 
     const[isNotSmallerScreen] = useMediaQuery("(min-width: 600px)");
+
+    const openEmail = () => {
+        window.open('mailto:st.broeks@gmail.com');
+      };
 
     return (
         <Stack>        
@@ -18,8 +23,8 @@ export default function Header() {
                 <Text fontSize="7xl" fontweight="bold" bgGradient="linear(to-r, blue.500, purple.600)" bgClip="text">Stefan Broeks</Text>
                 <Text color={isDark ? "gray.200" : "gray.500"}>Frontend Developer want websites maken is gewoon leuk.</Text>
                 
-                <Button mt={8} colorScheme="blue" onClick={() => window.open("https://www.linkedin.com/in/stefan-broeks-462318225/", "_blank")}>
-                 Hire me
+                <Button mt={8} colorScheme="red" onClick={openEmail}>
+                Contact me via email
                 </Button>
                 </Box>
                 <Image         src={MyImage}

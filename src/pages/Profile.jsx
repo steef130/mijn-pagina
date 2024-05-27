@@ -1,5 +1,5 @@
 import { useMediaQuery, Flex, Box, Heading, Text, Icon} from "@chakra-ui/react"
-import { DiCodeigniter, DiAndroid, DiWebplatform } from "react-icons/di"
+import { DiJsBadge, DiReact, DiHtml5 } from "react-icons/di"
 
 export default function Profile() {
 
@@ -16,26 +16,26 @@ export default function Profile() {
         </Box>
         <Box alignSelf="center" px="32" py="16">
            <Text fontSize="2xl" color="gray.400">
-            Product Designer and Developer, specialized in React
+            Web Designer and Developer, specialized in React
           </Text>
           <Flex direction={isNotSmallerScreen ? "row" : "column"} mt={8}>
             <Flex rounded="xl" direction="column" mt={4} bg="blue.400" h="30vh" w="30vh" justify="flex-end">
-              <Icon as={DiAndroid}  color="white" p="4" w="24" h="24"/>
-              <Text color="white"p="4"fontSize="xl" fontWeight="bold">Android Apps</Text>
+              <Icon as={DiReact}  color="white" p="4" w="24" h="24"/>
+              <Text color="white"p="4"fontSize="xl" fontWeight="bold">React</Text>
             </Flex>
           
            
             <Flex rounded="xl" direction="column" mt={4} ml={isNotSmallerScreen ? 4 : 0} 
-            bg="gray.300" h="30vh" w="30vh" justify="flex-end" _hover={{ bg: "teal.400" }}>
-              <Icon as={DiCodeigniter}  color="black" p="4" w="24" h="24"/>
-              <Text color="black" p="4"fontSize="xl" fontWeight="bold">Flutter Apps</Text>
+            bg="yellow.300" h="30vh" w="30vh" justify="flex-end" _hover={{ bg: "orange.400" }}>
+              <Icon as={DiJsBadge}  color="black" p="4" w="24" h="24"/>
+              <Text color="black" p="4"fontSize="xl" fontWeight="bold">JavaScript</Text>
           
             </Flex>
            
             <Flex rounded="xl" direction="column" mt={4} ml={isNotSmallerScreen ? 4 : 0}
-             bg="gray.300" h="30vh" w="30vh" justify="flex-end" _hover={{ bg: "green.400" }}>
-              <Icon as={DiWebplatform}  color="black" p="4" w="24" h="24"/>
-              <Text color="black" p="4" fontSize="xl" fontWeight="bold">Web Apps</Text>
+             bg="red.500" h="30vh" w="30vh" justify="flex-end" _hover={{ bg: "green.400" }}>
+              <Icon as={DiHtml5}  color="white" p="4" w="24" h="24"/>
+              <Text color="white" p="4" fontSize="xl" fontWeight="bold">HTML</Text>
            
             </Flex>
             </Flex>
