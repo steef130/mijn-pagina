@@ -19,9 +19,9 @@ export default function Header() {
             alignSelf="flex-start" >
 
                 <Box mt={isNotSmallerScreen ? "0" : "16"} align='flex-start'>
-                <Text fontSize="5xl" fontweight="semibold">Hello, I'm </Text>
+                <Text fontSize="5xl" fontweight="semibold" color="cyan.900">Hello, I'm </Text>
                 <Text fontSize="7xl" fontweight="bold" bgGradient="linear(to-r, blue.500, purple.600)" bgClip="text">Stefan Broeks</Text>
-                <Text color={isDark ? "gray.200" : "gray.500"}>Frontend Developer want websites maken is gewoon leuk.</Text>
+                <Text color={isDark ? "gray.200" : "gray.500"}>“Precisie in Code, Passie voor Leren, Creativiteit in Design - Jouw Frontend Vakman!”</Text>
                 
                 <Button mt={8} colorScheme="red" onClick={openEmail}>
                 Contact me via email

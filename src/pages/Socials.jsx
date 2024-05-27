@@ -5,7 +5,7 @@ export default function Socials() {
 
     return (
 
-       <HStack spacing="24">
+       <HStack spacing="24" color="cyan.900">
               <Icon as={FaUbuntu} boxSize="50"/>
               <Icon as={FaRaspberryPi} boxSize="50" />
               <Icon as={FaFirefoxBrowser} boxSize="50" />
