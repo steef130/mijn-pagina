@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Flex, IconButton, useColorMode, Spacer, Text } from "@chakra-ui/react";
+import { Flex, IconButton, useColorMode, Spacer } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import { FaSun, FaMoon, FaLinkedin, FaGithub } from 'react-icons/fa'
 import { FaRegChessPawn } from "react-icons/fa6";
@@ -21,6 +21,7 @@ export const Navigation = () => {
       
       <IconButton icon={<HamburgerIcon />} aria-label="Menu"  onClick={toggleMenu} />
       {isMenuOpen && (
+        
   <ul>
     <li>
     <Link to="/">Home</Link>
@@ -38,6 +39,8 @@ export const Navigation = () => {
     <Link to="/Berichten">Berichten</Link>
     </li>
   </ul>
+  
+
 )}
 <Spacer></Spacer>
       <Link to="https://www.linkedin.com/in/stefan-broeks-462318225/">
