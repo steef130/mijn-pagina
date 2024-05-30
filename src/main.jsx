@@ -7,7 +7,7 @@ import { Root } from './components/Root';
 import { Intro } from './pages/Intro';
 import { Drone } from './pages/Drone';
 import { Raspberry } from './pages/Raspberry';
-import { Berichten } from './pages/Berichten';
+import { BerichtenPagina } from './pages/BerichtenPagina';
 
 const router = createBrowserRouter([
   {
@@ -34,7 +34,7 @@ const router = createBrowserRouter([
         },
         {
         path: '/Berichten',
-        element: <Berichten />,
+        element: <BerichtenPagina />,
           },
         {
         path: '*',

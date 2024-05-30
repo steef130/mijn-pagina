@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 import { Flex, IconButton, useColorMode, Spacer } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import { FaSun, FaMoon, FaLinkedin, FaGithub } from 'react-icons/fa'
 import { FaRegChessPawn } from "react-icons/fa6";
 import "./Style.css";
 export const Navigation = () => {
-  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   function toggleMenu() {
     setIsMenuOpen(!isMenuOpen);
   }
