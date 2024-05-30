@@ -1,5 +1,5 @@
 
-import { Box, Button, Flex, FormControl, FormLabel, VStack, Input, Text } from '@chakra-ui/react';
+import { Box, Button,  VStack, Input, Text } from '@chakra-ui/react';
 import berichtenData from './berichten.json'; 
 import React, { useState, useEffect } from 'react';
 import fs from 'fs';
@@ -28,16 +28,16 @@ import achtergond from './achtergrond-website.jpg';
   
   const voegBerichtToe = () => {
     if (naam && bericht) {
-      // Voeg een nieuw bericht toe aan de lijst
+      
       const nieuwBericht = {
         id: Date.now(),
         naam,
         bericht,
       };
   
-      // Controleer of er al 5 berichten zijn
+     
       if (berichten.length >= 5) {
-        // Verwijder het oudste bericht
+        
         const nieuweBerichten = berichten.slice(1);
         setBerichten(nieuweBerichten.concat(nieuwBericht));
       } else {
