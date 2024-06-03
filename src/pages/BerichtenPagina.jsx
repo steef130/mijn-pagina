@@ -1,6 +1,7 @@
 import achtergond from './achtergrond-website.jpg';
 import { Box, Button, VStack, Input, Text } from '@chakra-ui/react';
 import React, { useState } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 
 export const BerichtenPagina = () => {
   const [berichten, setBerichten] = useState([]);
@@ -9,11 +10,12 @@ export const BerichtenPagina = () => {
 
   const voegBerichtToe = async () => {
     try {
-      const response = await fetch("https://script.google.com/d/1M6TkoocOEHb8LziX1nlkBOZHgucjbEorWpRcJJmtJW-1the2RsMFaEWT/edit?usp=drive_link", {
+      const newId = uuidv4();
+      const response = await fetch("https://lh3.googleusercontent.com/d/1XsAMLLtfoKPHR41DIaHNZOKTvSSo2DO-fiyKi0g661gKTvSSo2DO-fiyKi0g661g", {
         method: "POST",
-        body: JSON.stringify({ naam, bericht,id: Date.now() }),
+        body: JSON.stringify({ naam, bericht,id: newId }),
         headers: { "Content-Type": "application/json;charset=utf-8" },
-      });
+        });
 
       if (!response.ok) {
         throw new Error("Er is een fout opgetreden bij het toevoegen van het bericht.");
