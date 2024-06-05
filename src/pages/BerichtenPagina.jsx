@@ -7,11 +7,11 @@ export const BerichtenPagina = () => {
   const [berichten, setBerichten] = useState([]);
   const [naam, setNaam] = useState('');
   const [bericht, setBericht] = useState('');
-
+  
   const voegBerichtToe = async () => {
     try {
       const newId = uuidv4();
-      const response = await fetch("https://lh3.googleusercontent.com/d/1XsAMLLtfoKPHR41DIaHNZOKTvSSo2DO-fiyKi0g661gKTvSSo2DO-fiyKi0g661g", {
+      const response = await fetch("https://drive.google.com/file/d/1Ld9b_2VcsQso4uy-Y5Si8JoOnshC7D2i", {
         method: "POST",
         body: JSON.stringify({ naam, bericht,id: newId }),
         headers: { "Content-Type": "application/json;charset=utf-8" },
