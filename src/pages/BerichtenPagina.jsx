@@ -7,7 +7,7 @@ export const BerichtenPagina = () => {
   const [berichten, setBerichten] = useState([]);
   const [naam, setNaam] = useState('');
   const [bericht, setBericht] = useState('');
-  
+  console.log(naam)
   const voegBerichtToe = async () => {
     try {
       const newId = uuidv4();
