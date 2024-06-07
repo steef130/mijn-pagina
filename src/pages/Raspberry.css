@@ -1,0 +1,13 @@
+@media only screen and (max-width: 600px) {
+    .minecraft {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .story,
+    .arcade {
+      width: 170%; 
+    }
+  }
+ 

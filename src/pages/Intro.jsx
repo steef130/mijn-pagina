@@ -3,11 +3,12 @@ import firstcd from './firstcd.jpg';
 import Basic from './Basic.jpg';
 import auto from './auto.mp4';
 import driedprint from './driedprint.jpg';
+import './intro.css';
 export const Intro = () => {
 
     return (
         <Wrap margin='30px' spacing={'30px'} justify='center'>
-        <WrapItem>
+        <WrapItem className="verhalen">
           <Center w='50rem'  bg='red.200' borderRadius={"lg"} padding="1rem">
           <Text>Het avontuur begon in de bescheiden kamer van mijn jeugd, verlicht door het flikkerende scherm van mijn oude Sharp computer. Terwijl mijn vrienden zich vermaakten met hun Commodore 64’s, vol met een arsenaal aan spellen, vond ik mijn toevlucht in de wereld van Basic programmeren en het nobele spel van schaken. Het was een tijd waarin digitale entertainment nog in de kinderschoenen stond, maar mijn passie voor schaken ontvlamde.
 
@@ -31,7 +32,7 @@ export const Intro = () => {
           </Center>
         </WrapItem>
          
-        <WrapItem>
+        <WrapItem className="verhalen" >
           <Center w='50rem'  bg='tomato' borderRadius={"lg"} padding="1rem">
           <text>Het was een lange en geduldige wachttijd, maar toen het moment eindelijk aanbrak dat ik een computer tot mijn beschikking had die niet alleen diende voor werk of studie, maar ook voor mijn persoonlijke vermaak, kon niets mijn enthousiasme temperen. Ik herinner me nog goed hoe ik een oude Red Head cd vond, een relikwie uit vervlogen tijden, die me nieuwsgierig maakte naar wat de wereld van besturingssystemen inmiddels te bieden had. Mijn zoektocht leidde me al snel naar Ubuntu, een naam die klonk als een belofte van vrijheid en mogelijkheden.
 
@@ -44,7 +45,7 @@ export const Intro = () => {
           </Center>
         </WrapItem>
        
-        <WrapItem>
+        <WrapItem className="verhalen">
           <Center w='50rem'  bg='blackAlpha.500'borderRadius={"lg"} padding="1rem" >
            <Text>Als docent Techniek werd mij de opwindende taak toevertrouwd om jonge leerlingen de beginselen van programmeren bij te brengen, een vaardigheid die in onze digitale wereld steeds belangrijker wordt. We gebruikten Scratch, een visuele programmeertaal die speciaal ontworpen is om kinderen op een intuïtieve en interactieve manier te leren coderen. De lessen waren niet alleen beperkt tot het digitale scherm; we brachten de code tot leven met behulp van Mbot-robots, LEGO-constructies en Microbit-controllers.
 
@@ -73,7 +74,7 @@ export const Intro = () => {
           <img src={driedprint} alt="dried"style={{ objectFit: 'cover', width: '100%', height: '100%', borderRadius: '2%' }} ></img>
           </Center>
         </WrapItem>
-        <WrapItem>
+        <WrapItem className="verhalen">
           <Center w='50rem'  bg='blue.300' borderRadius={"lg"} padding="1rem">
           <Text>Op school was het een spannende tijd van ontdekking en innovatie voor de leerlingen, omdat ze de kunst van het tekenen op de computer onder de knie moesten krijgen. Dit deden we met behulp van geavanceerde programma’s zoals Fusion360, Solidworks en TinkerCAD, die elk een unieke benadering van 3D-modellering boden. Fusion360, met zijn krachtige functies voor het ontwerpen van complexe vormen, bood een diepgaande duik in de wereld van professionele CAD-software. Solidworks, vaak gebruikt in de industrie, hielp de leerlingen om de precisie en technische aspecten van ontwerp te begrijpen. TinkerCAD, met zijn gebruiksvriendelijke interface, was perfect voor beginners om de basisprincipes van 3D-ontwerp te leren.
 
