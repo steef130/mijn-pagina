@@ -1,3 +1,5 @@
+
+
 .nav ul {
     
    padding: 0;
@@ -8,5 +10,11 @@
 
   }
 
-
+  @media (max-width: 600px) {
+   .nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0;
+   }
+ }
  
