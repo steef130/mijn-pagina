@@ -1,5 +1,6 @@
 import { useMediaQuery, Flex, Box, Heading, Text, Icon} from "@chakra-ui/react"
 import { DiJsBadge, DiReact, DiHtml5 } from "react-icons/di"
+import { FaPhp } from "react-icons/fa"
 
 export default function Profile() {
 
@@ -34,8 +35,8 @@ export default function Profile() {
            
             <Flex rounded="xl" direction="column" mt={4} ml={isNotSmallerScreen ? 4 : 0}
              bg="red.500" h="30vh" w="30vh" justify="flex-end" _hover={{ bg: "green.400" }}>
-              <Icon as={DiHtml5}  color="white" p="4" w="24" h="24"/>
-              <Text color="white" p="4" fontSize="xl" fontWeight="bold">HTML</Text>
+              <Icon as={FaPhp}  color="white" p="4" w="24" h="24"/>
+              <Text color="white" p="4" fontSize="xl" fontWeight="bold">PHP</Text>
            
             </Flex>
             </Flex>

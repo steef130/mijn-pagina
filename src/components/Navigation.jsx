@@ -11,36 +11,39 @@ export const Navigation = () => {
   function toggleMenu() {
     setIsMenuOpen(!isMenuOpen);
   }
+
   const{ colorMode, toggleColorMode } = useColorMode();
 
   const isDark = colorMode === 'dark';
+ 
 
-  
+
 
   return (
-    <Flex as="nav" align="center" justify="space-between" p={4} bg="teal.500" gap= "2rem" className='nav'>
+
+  <Flex as="nav" align="center" justify="space-between" p={4} bg="teal.500" gap= "2rem" className='nav'>
       
-      <IconButton icon={<HamburgerIcon />} aria-label="Menu"  onClick={toggleMenu} />
-      {isMenuOpen && (
-        
-  <ul>
-    <li>
-    <Link to="/">Home</Link>
-    </li>
-    <li>
-    <Link to="/Drone">Drone</Link>
-    </li>
-    <li>
-    <Link to="/Raspberry">Raspberry PI</Link>
-    </li>
-    <li>
-    <Link to="/Intro">Intro</Link>
-    </li>
-    <li>
-    <Link to="/Berichten">Berichten</Link>
-    </li>
-  </ul>
-  
+  <IconButton icon={<HamburgerIcon />} aria-label="Menu"  onClick={toggleMenu} />
+  {isMenuOpen && (
+  <div className="popup-menu">
+    <ul>
+      <li>
+      <Link to="/">Home</Link>
+      </li>
+      <li>
+      <Link to="/Drone">Drone</Link>
+      </li>
+      <li>
+      <Link to="/Raspberry">Raspberry PI</Link>
+      </li>
+      <li>
+      <Link to="/Intro">Intro</Link>
+      </li>
+      <li>
+      <Link to="/Berichten">Berichten</Link>
+      </li>
+    </ul>
+  </div>   
 
 )}
 <Spacer></Spacer>
@@ -57,4 +60,3 @@ export const Navigation = () => {
     </Flex>
   );
 };
-

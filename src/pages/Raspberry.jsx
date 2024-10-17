@@ -1,4 +1,4 @@
-import { Grid, GridItem, Text, Link, Button, IconButton } from '@chakra-ui/react'
+import { Grid, GridItem, Text, Link, Button, IconButton, useMediaQuery } from '@chakra-ui/react'
 import arcade from './arcade.jpg';
 import minecraft from './MinecraftPI.jpg';
 import { SiRetropie } from "react-icons/si";
@@ -7,15 +7,17 @@ import './Raspberry.css';
 
 export const Raspberry = () => {
 
-   
+         const [isMobile] = useMediaQuery("(max-width: 600px)");
+
+
     return (
-        <div>
-        <Grid
-     h='100vh'
-     templateRows='repeat(2, 1fr)'
-     templateColumns='repeat(5, 1fr)'
-     gap={4}
-     >
+      <div>
+      <Grid
+      h='100vh'
+      templateRows='repeat(2, 1fr)'
+      templateColumns={isMobile ? 'repeat(3, 1fr)' : 'repeat(5, 1fr)'}
+      gap={4}
+    >
      <GridItem rowSpan={2} colSpan={1} className="arcade">
      <img src={arcade} alt="My Arcade"style={{ objectFit: 'cover', width: '100%', height: '100%' }}  />
         </GridItem>
