@@ -53,9 +53,7 @@ export const Navigation = () => {
       <Link to="https://github.com/Steef130">
       <IconButton icon={<FaGithub />} isRound="true"></IconButton>
       </Link>
-      <Link to="https://www.chess.com/member/3biertjes">
-      <IconButton icon={<FaRegChessPawn />} isRound="true"></IconButton>
-      </Link>
+     
       <IconButton ml={8} icon={isDark ? <FaSun /> : <FaMoon />} isRound="true" onClick={toggleColorMode}></IconButton>
     </Flex>
   );

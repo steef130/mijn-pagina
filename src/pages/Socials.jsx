@@ -7,12 +7,12 @@ export default function Socials() {
     return (
 
        <HStack spacing="24" color="cyan.900">
-              <Icon as={BiLogoVisualStudio} boxSize="50"/>
+              <Icon as={FaEdge} boxSize="50"/>
               <Icon as={FaRaspberryPi} boxSize="50" />
-              <Icon as={FaEdge} boxSize="50" />
+              <Icon as={BiLogoVisualStudio} boxSize="50" />
               <Icon as={FaAndroid} boxSize="50" />
        </HStack>
           
-    )
+    )  
     
 }
